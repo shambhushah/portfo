@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+<div class="nav-logo">
+                <div class="logo-photo">
+                    <img src="profile.jpg" alt="Profile Photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <span class="logo-initials">S</span>
+                </div>
+                <span>Shambhu Shah</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link"><span class="nav-icon">🏠</span> Home</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link"><span class="nav-icon">🧠</span> Experience</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link"><span class="nav-icon">✨</span> Skills</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link"><span class="nav-icon">🎓</span> Education</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link"><span class="nav-icon">📬</span> Contact</a></li>
+                <li class="nav-item nav-cv">
+                    <div class="cv-menu">
+                        <button class="nav-link cv-toggle" type="button"><span class="nav-icon">📄</span> CV ▾</button>
+                        <div class="cv-dropdown">
+                            <a href="Shambhu-Shah-CV.pdf" download="Shambhu-Shah-CV.pdf" class="cv-link"><span class="nav-icon">⬇️</span> Download CV</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <div class="binary-lines" aria-hidden="true">
+                        <span>01010101 10101010 00110011 11001100 01010101 10101010</span>
+                        <span>11001100 01010101 00110011 10101010 11001100 01010101</span>
+                    </div>
+                    <h1 class="greeting">Hello, I'm <span class="highlight" id="typewriter"></span></h1>
+                    <p class="intro-text"><span id="jobTitle"></span></p>
+                    <p class="description">Welcome to my portfolio. I specialize in building responsive and user-friendly websites and applications.</p>
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-year">2024 - Present</div>
+                    <h3>Software Engineer</h3>
+                    <p class="experience-role">Leading product development for responsive web applications.</p>
+                    <p class="experience-status">Current role focused on React, Node.js, and polished UI systems.</p>
+                    <button class="experience-toggle" type="button">Show details</button>
+                    <div class="experience-detail">
+                        <p>Architected maintainable UI modules, improved performance, and led design reviews for polished client-facing features.</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-year">2022 - 2024</div>
+                    <h3>Front-end Developer</h3>
+                    <p class="experience-role">Delivered interactive and accessible interfaces for clients.</p>
+                    <p class="experience-status">Worked with HTML, CSS, JavaScript, and modern component workflows.</p>
+                    <button class="experience-toggle" type="button">Show details</button>
+                    <div class="experience-detail">
+                        <p>Built responsive components, improved accessibility, and collaborated on design systems to strengthen user experience.</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-year">2021 - 2022</div>
+                    <h3>Junior Developer</h3>
+                    <p class="experience-role">Supported development teams with web and automation projects.</p>
+                    <p class="experience-status">Built clean code foundations and improved feature delivery.</p>
+                    <button class="experience-toggle" type="button">Show details</button>
+                    <div class="experience-detail">
+                        <p>Collaborated on scripting tools, debugged workflows, and helped deliver stable releases on schedule.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript, React, Vue.js</p>
+                    <div class="skill-detail">
+                        <div class="detail-content">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Vue.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Python, Database Design, APIs</p>
+                    <div class="skill-detail">
+                        <div class="detail-content">
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Database</span>
+                            <span class="tech-badge">APIs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Tools & Technologies</h3>
+                    <p>Git, Docker, AWS, CI/CD, REST APIs</p>
+                    <div class="skill-detail">
+                        <div class="detail-content">
+                            <span class="tech-badge">Git</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">AWS</span>
+                            <span class="tech-badge">CI/CD</span>
+                            <span class="tech-badge">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>Degree Name</h3>
+                        <span class="year">2020 - 2024</span>
+                    </div>
+                    <p class="institution">University Name</p>
+                    <p class="description">Description of your degree, major subjects, and achievements.</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>Course or Certification</h3>
+                        <span class="year">2023</span>
+                    </div>
+                    <p class="institution">Platform / Institution</p>
+                    <p class="description">Details about the certification or course you completed.</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>Another Qualification</h3>
+                        <span class="year">2022</span>
+                    </div>
+                    <p class="institution">School / Organization</p>
+                    <p class="description">Information about this educational achievement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📱 Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📍 Location</h3>
+                        <p>City, Country</p>
+                    </div>
+                    <div class="social-links">
+                        <h3>Follow Me</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">LinkedIn</a>
+                            <a href="#" class="social-icon">GitHub</a>
+                            <a href="#" class="social-icon">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

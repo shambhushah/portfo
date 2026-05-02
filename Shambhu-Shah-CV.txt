@@ -1,0 +1,18 @@
+Shambhu Shah - CV
+
+This is a placeholder CV file. Replace with your official resume or CV document when ready.
+
+Skills:
+- Web Development
+- Backend Development
+- Tools and Technologies
+- UI/UX Design
+
+Experience:
+- Software Engineer
+- Front-end Developer
+- Junior Developer
+
+Education:
+- Degree Name
+- Certification
